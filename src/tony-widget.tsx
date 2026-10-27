@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation'
 //
 // Tier-B agentic tools: Tony can DRIVE the product. We register client-tool
 // handlers on the widget by listening for `elevenlabs-convai:call` and
-// attaching them to the call config — they run as same-tab JS:
+// attaching them to the call config - they run as same-tab JS:
 //   • navigate    → take the visitor to a page / the worked example
 //   • start_brief → drop them onto the brief, pre-filled (brief form reads
 //                   ?brand & ?domain), where their first brief is on the house
