@@ -1,0 +1,21 @@
+{
+  "name": "Tony - adhouse creative director",
+  "llm": "gemini-2.0-flash-001",
+  "first_message": "Tony here \u2014 the creative department at Adhouse. Ask me how we turn a brief into ideas, or why any great ad actually worked. Where shall we start?",
+  "voice": {
+    "voice_id": "Yex236tJMytMYoUWKVSJ",
+    "name": "Micky London (ElevenLabs voice library)"
+  },
+  "knowledge_base": {
+    "documents": 7,
+    "rag_enabled": true,
+    "embedding_model": "e5_mistral_7b_instruct"
+  },
+  "client_tools": [
+    "navigate",
+    "start_brief"
+  ],
+  "widget": {
+    "main_label": "Talk to Tony - our creative director"
+  }
+}

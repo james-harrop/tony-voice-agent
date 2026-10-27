@@ -1,0 +1,49 @@
+[
+  {
+    "type": "client",
+    "name": "navigate",
+    "description": "Take the visitor to a page on the Adhouse site, or open the live worked example, when showing beats telling. Call with the destination.",
+    "expects_response": false,
+    "parameters": {
+      "type": "object",
+      "required": [
+        "destination"
+      ],
+      "properties": {
+        "destination": {
+          "type": "string",
+          "description": "Where to take them: demo (the Malt Coast worked example), brief (start making ads), pricing, method, or home",
+          "enum": [
+            "demo",
+            "brief",
+            "pricing",
+            "method",
+            "home"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "type": "client",
+    "name": "start_brief",
+    "description": "Start an ad brief for the visitor. Call this when they want you to actually make ads / start a brief and have given their brand name (and ideally website). It drops them onto the brief page with their details filled in.",
+    "expects_response": false,
+    "parameters": {
+      "type": "object",
+      "required": [
+        "brand"
+      ],
+      "properties": {
+        "brand": {
+          "type": "string",
+          "description": "The brand or company name"
+        },
+        "website": {
+          "type": "string",
+          "description": "The brand website domain, e.g. maltcoast.co.uk (optional)"
+        }
+      }
+    }
+  }
+]
